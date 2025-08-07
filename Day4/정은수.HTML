@@ -1,0 +1,93 @@
+/* 전체 배경: 부드러운 보라색 + 분홍톤 그라데이션으로 변경 */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Gowun Dodum', sans-serif;
+  background: linear-gradient(135deg, #d6c1f0, #f7d6e0, #f0e5f8);
+  background-size: 300% 300%;
+  animation: moveBG 15s ease infinite;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes moveBG {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.container {
+  width: 100%;
+  padding: 20px;
+}
+
+.card {
+  background: #ffffffdd;
+  backdrop-filter: blur(12px);
+  border-radius: 25px;
+  padding: 45px;
+  max-width: 420px;
+  margin: auto;
+  box-shadow: 0 12px 35px rgba(128, 43, 123, 0.15);
+  text-align: center;
+}
+
+.profile-img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #b984cc;
+  margin-bottom: 22px;
+  box-shadow: 0 0 10px #b984ccaa;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 6px;
+  color: #592f80;
+}
+
+.tagline {
+  color: #7d5ba6;
+  margin-bottom: 18px;
+  font-style: italic;
+}
+
+.badges {
+  margin: 12px 0 22px;
+}
+
+.badge {
+  display: inline-block;
+  background: #d4b2d8;
+  color: #3e1a57;
+  padding: 7px 14px;
+  margin: 6px;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  box-shadow: 0 2px 5px #b684d9aa;
+}
+
+.info p,
+.skills p,
+.goal p,
+.contact p {
+  color: #553d6e;
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+h3 {
+  margin-top: 22px;
+  color: #482860;
+  font-size: 1.2rem;
+  border-bottom: 2px solid #b985cd;
+  padding-bottom: 6px;
+}
+
+a {
+  color: #8447b1;
+  text-decorati
